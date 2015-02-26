@@ -1,0 +1,10 @@
+*Thumbs.db
+*.DS_Store
+.vagrant
+
+node_modules
+bower_components
+.tmp
+.sass-cache
+
+dist
