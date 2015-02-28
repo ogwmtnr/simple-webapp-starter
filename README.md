@@ -51,14 +51,16 @@ $ yo webapp
 
 ### Gruntfile.js修正
 
-`Vagrantfile`での設定がポートフォワードではなくプライベートIPなので、以下を修正する。
+`Vagrantfile`での設定がポートフォワードではなくプライベートIPなので、`/vagrant/project/Gruntfile.js`の78行目を以下のように修正する。
 
-```js:line78
+```js
 -hostname: 'localhost'
 +hostname: '192.168.33.10'
 ```
 
 ### 動作確認
+
+`/vagrant/project`にて
 
 ```shell
 $ grunt serve
@@ -68,4 +70,8 @@ $ grunt serve
 
 ページが表示されれば成功！
 
-後は開発を楽しみましょう。
+やめる時は`Ctrl+C`で。
+
+### 開発方法について
+
+ここでは割愛。
