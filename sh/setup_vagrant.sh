@@ -65,5 +65,15 @@ echo '-----*/'
 npm install -g generator-webapp
 
 echo '/*-----'
+echo ' * make project dir.'
+echo '-----*/'
+if [[ ! -e "/vagrant/project" ]]; then
+  mkdir /vagrant/project
+  echo 'mkdir completed.'
+else
+  echo 'already doing.'
+fi
+
+echo '/*-----'
 echo ' * success all scripts!'
 echo '-----*/'
